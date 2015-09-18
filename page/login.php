@@ -5,6 +5,7 @@
 	//Defineerime muutujad
 	$email_error = "";
 	$password_error = "";
+	$name_error = "";
 	
 	//kontrollin kas keegi vajutas nuppu
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -44,4 +45,9 @@
 	
 	
 	<h2>Create user</h2>
+	<form action="login.php" method="post">
+		<input name="name" type="text" placeholder="Eesnimi Perenimi" > <?php echo $name_error; ?><br><br>
+		<input type="submit" value="Loo kasutaja" > <br><br>
+	</form>
+	
 <?php require_once("../footer.php"); ?>
