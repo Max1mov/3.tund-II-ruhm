@@ -1,4 +1,8 @@
 <?php
+	$page_title = "Minu avaleht";
+	$file_name = "home.php";
+?>
+<?php
 	
 	// kopeerime header.php sisu
 	// ../ - tähistavad, et fail asub ühe kausta võrra väljaspool
